@@ -11,7 +11,7 @@ body{
   bottom: 0;
   left: 0;
   width: 800px;
-  height: 100px;
+  height: 100%;
   border-radius: 3px;
 }
 
@@ -24,4 +24,63 @@ body{
 
 .innerDiv h2{
   font-family: 'Share Tech Mono', serif;
+}
+
+.ScheduleTable{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
+#nav
+ {
+ background-color:#262626;
+ width:100%;
+ height:50px;
+ box-shadow: 0px 1px 50px #c0392b;
+ position:fixed;
+ bottom:0px;
+}
+
+#navigation
+{
+ list-style-type:none; 
+}
+li 
+{
+ display:inline;
+ padding:10px;
+}
+#nav a
+{
+ font-family:verdana;
+ text-decoration:none;
+ color:#EDEDED;
+} 
+#nav a:hover 
+{
+ color:#BDBDBD;
+}
+
+table, th, td {
+    border: 1px #c0392b;
+    border-collapse: collapse;
+}
+
+th{
+  text-align: right;
+  vertical-align: top;
+}
+
+th, td {
+    padding: 5px;    
+}
+
+td{
+  text-align: left;
 }
