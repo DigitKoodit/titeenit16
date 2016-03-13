@@ -22,7 +22,7 @@ MyTestMap = React.createClass({
     };
   },
   render() {
-    if (this.data.loaded) 
+    if (this.data.loaded)
       return <GoogleMap name="mymap" options={this.data.mapOptions} />;
 
     return <div>Loading map...</div>;
@@ -37,7 +37,7 @@ GoogleMap = React.createClass({
   componentDidMount() {
     GoogleMaps.create({
       name: this.props.name,
-      element: React.findDOMNode(this),
+      element: ReactDOM.findDOMNode(this),
       options: this.props.options
     });
 
@@ -74,7 +74,7 @@ GoogleMap = React.createClass({
         'http://titeeniappi.meteor.com/images/map/shop.png',
         'http://titeeniappi.meteor.com/images/map/alko.png'
       ];
-      for (i in locations) {  
+      for (i in locations) {
         marker = new google.maps.Marker({
           position: new google.maps.LatLng(locations[i][2], locations[i][3]),
           map: map.instance,
@@ -94,10 +94,11 @@ GoogleMap = React.createClass({
     if (GoogleMaps.maps[this.props.name]) {
       google.maps.event.clearInstanceListeners(GoogleMaps.maps[this.props.name].instance);
       delete GoogleMaps.maps[this.props.name];
-    } 
+    }
   },
   render() {
     return <div className="map-container"></div>;
+
   }
 });
 
