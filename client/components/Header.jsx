@@ -8,12 +8,12 @@ Header = React.createClass({
           </li>
           <li>
             Menossa mukana:
-            <a href="../what"> Vaadin, </a>
-            <a href="#">Nortal, </a>
-            <a href="#">Avoltus, </a>
-            <a href="/#">Anders Innovations, </a>
-            <a href="#">Avoltus, </a>
-            <a href="#">TEK </a>
+            <a href="../what"> Vaadin</a>,
+            <a href="#"> Nortal</a>,
+            <a href="#"> Avoltus</a>,
+            <a href="/#"> Anders Innovations</a>,
+            <a href="#"> Avoltus</a>,
+            <a href="#"> TEK</a>
 
           </li>
         </ul>
