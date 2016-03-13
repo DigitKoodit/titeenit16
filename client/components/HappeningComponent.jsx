@@ -6,7 +6,7 @@ HappeningComponent = React.createClass({
           Juuri nyt: {Session.get("happeningNow").nimi} @ {Session.get("happeningNow").paikka}
         </h2>
         <h2>
-          Seuraavaksi: klo {Session.get("happeningNext").klo} {Session.get("happeningNext").nimi} @ {Session.get("happeningNext").paikka}
+          Seuraavaksi: {Session.get("happeningNext").klo} {Session.get("happeningNext").nimi} @ {Session.get("happeningNext").paikka}
         </h2>
       </div>
     );
