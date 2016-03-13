@@ -32,7 +32,7 @@ MyTestMap = React.createClass({
 GoogleMap = React.createClass({
   propTypes: {
     name: React.PropTypes.string.isRequired,
-    options: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+    options: React.PropTypes.object.isRequired
   },
   componentDidMount() {
     GoogleMaps.create({
@@ -47,7 +47,8 @@ GoogleMap = React.createClass({
         ['Showroom','https://goo.gl/maps/bvNJuLRuwmo', 60.448573, 22.265756, '', '1'],
         ['Liikennepuisto', 'https://goo.gl/maps/5w2cQDb44FN2', 60.445343, 22.286750, '', '1'],
         ['Tivoli', 'https://goo.gl/maps/BJ56xnoRDoG2', 60.447317, 22.282734, '', '1'],
-        ['Boost', 'https://goo.gl/maps/LXcbWE9Yi4D2', 60.450140, 22.293690, '', '1'],
+        ['Pesäpallokenttä', 'https://goo.gl/maps/Hcnd3m4C8V42', 60.446205, 22.297271, '', '1'],
+        ['Kupittaan puisto', 'https://goo.gl/maps/EeiMnST9xX12', 60.445732, 22.287388, '', '1'],
         ['Kultainen Hirvi', 'https://goo.gl/maps/pE1mp13hDt22', 60.448055, 22.288839, 'Hyvää pubiruokaa, kaljaa', '2'],
         ['Delhi Darbar', 'https://goo.gl/maps/Az6CsFmsQdL2', 60.451895, 22.283035, 'Intialaista', '2'],
         ['Assarin Ullakko', 'https://goo.gl/maps/vVBpgbqa4oN2', 60.454302, 22.287526, 'Opiskelijaravintola, avoinna la 11-16', '2'],
@@ -100,6 +101,8 @@ GoogleMap = React.createClass({
     return <div className="map-container"></div>;
   }
 });
+
+var styles = [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}];
 
 // if (Meteor.isClient) {
 //   Meteor.startup(function() {
