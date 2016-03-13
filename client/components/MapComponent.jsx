@@ -22,7 +22,7 @@ MyTestMap = React.createClass({
     };
   },
   render() {
-    if (this.data.loaded) 
+    if (this.data.loaded)
       return <GoogleMap name="mymap" options={this.data.mapOptions} />;
 
     return <div>Loading map...</div>;
@@ -37,7 +37,7 @@ GoogleMap = React.createClass({
   componentDidMount() {
     GoogleMaps.create({
       name: this.props.name,
-      element: React.findDOMNode(this),
+      element: ReactDOM.findDOMNode(this),
       options: this.props.options
     });
 
@@ -58,12 +58,12 @@ GoogleMap = React.createClass({
         ['Arezzo', 'https://goo.gl/maps/RsEkx9bbWrv', 60.450483, 22.278903, 'Kebab-pizzeria', '2'],
         ['Kotipizza', 'https://goo.gl/maps/357s9tyj3n92', 60.446235, 22.283900, '', '2'],
         ['Hesburger', 'https://goo.gl/maps/PP2zevUNrET2', 60.440123, 22.282498, '', '2'],
-        ['Citymarket', 'https://goo.gl/maps/QU2s9CW48DN2', 60.441732, 22.286418, 'La 8-21', '3'],
+        ['Citymarket', 'https://goo.gl/maps/QU2s9CW48DN2', 60.441732, 22.286418, 'Avoinna La 8-21', '3'],
         ['Alko', 'https://goo.gl/maps/Rvwkfa6JizF2', 60.442372, 22.286804, '', '4'],
-        ['K-market', 'https://goo.gl/maps/vMmU17xiuus', 60.449335, 22.293491, 'La 9-21', '3'],
-        ['K-market', 'https://goo.gl/maps/ayRxG5Em96u', 60.453080, 22.286861, 'La 7-23', '3'],
-        ['Sale', 'https://goo.gl/maps/wg1M3yuvwbM2', 60.452193, 22.284499, 'La 10-23', '3'],
-        ['K-Extra', 'https://goo.gl/maps/SQ1AtCQFXdA2', 60.452526, 22.283458, 'La 7-22', '3']
+        ['K-market', 'https://goo.gl/maps/vMmU17xiuus', 60.449335, 22.293491, 'Avoinna La 9-21', '3'],
+        ['K-market', 'https://goo.gl/maps/ayRxG5Em96u', 60.453080, 22.286861, 'Avoinna La 7-23', '3'],
+        ['Sale', 'https://goo.gl/maps/wg1M3yuvwbM2', 60.452193, 22.284499, 'Avoinna La 10-23', '3'],
+        ['K-Extra', 'https://goo.gl/maps/SQ1AtCQFXdA2', 60.452526, 22.283458, 'Avoinna La 7-22', '3']
       ];
       var infowindow = new google.maps.InfoWindow();
       var marker, i;
@@ -75,7 +75,7 @@ GoogleMap = React.createClass({
         'http://titeeniappi.meteor.com/images/map/shop.png',
         'http://titeeniappi.meteor.com/images/map/alko.png'
       ];
-      for (i in locations) {  
+      for (i in locations) {
         marker = new google.maps.Marker({
           position: new google.maps.LatLng(locations[i][2], locations[i][3]),
           map: map.instance,
@@ -95,10 +95,11 @@ GoogleMap = React.createClass({
     if (GoogleMaps.maps[this.props.name]) {
       google.maps.event.clearInstanceListeners(GoogleMaps.maps[this.props.name].instance);
       delete GoogleMaps.maps[this.props.name];
-    } 
+    }
   },
   render() {
     return <div className="map-container"></div>;
+
   }
 });
 

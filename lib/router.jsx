@@ -22,6 +22,14 @@ FlowRouter.route('/aikataulu', {
     }
 });
 
+FlowRouter.route('/sponsorit', {
+    action: function() {
+        ReactLayout.render(Container, {
+            content: <SponsorComponent/>
+        });
+    }
+});
+
 // FlowRouter.route('/blog/:postId', {
 //     action: function(params, queryParams) {
 //         console.log("Yeah! We are on the post:", params.postId);
