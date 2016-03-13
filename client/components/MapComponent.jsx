@@ -44,11 +44,11 @@ GoogleMap = React.createClass({
     GoogleMaps.ready(this.props.name, function(map) {
       var locations = [
         ['Majoitus', 'https://goo.gl/maps/exb3ZLa2s182', 60.440062, 22.293108, '', '0'],
-        ['Showroom','https://goo.gl/maps/bvNJuLRuwmo', 60.448573, 22.265756, '', '1'],
-        ['Liikennepuisto', 'https://goo.gl/maps/5w2cQDb44FN2', 60.445343, 22.286750, '', '1'],
-        ['Tivoli', 'https://goo.gl/maps/BJ56xnoRDoG2', 60.447317, 22.282734, '', '1'],
-        ['Pesäpallokenttä', 'https://goo.gl/maps/Hcnd3m4C8V42', 60.446205, 22.297271, '', '1'],
-        ['Kupittaan puisto', 'https://goo.gl/maps/EeiMnST9xX12', 60.445732, 22.287388, '', '1'],
+        ['Showroom','https://goo.gl/maps/bvNJuLRuwmo', 60.448573, 22.265756, 'Perjantaina <ul><li>Sodanjulistus 18:00</li></ul>', '1'],
+        ['Liikennepuisto', 'https://goo.gl/maps/5w2cQDb44FN2', 60.445343, 22.286750, 'Lauantaina <ul><li>Sokkoralli 13:00</li></ul>', '1'],
+        ['Tivoli', 'https://goo.gl/maps/BJ56xnoRDoG2', 60.447317, 22.282734, 'Lauantaina <ul><li>Kadonneen tutkinnon metsästys 20:00</li></ul>', '1'],
+        ['Pesäpallokenttä', 'https://goo.gl/maps/Hcnd3m4C8V42', 60.446205, 22.297271, 'Lauantaina <ul><li>Curling 17:00</li></ul>', '1'],
+        ['Kupittaan puisto', 'https://goo.gl/maps/EeiMnST9xX12', 60.445732, 22.287388, 'Lauantaina <ul><li>Aamupala 10:00</li> <li>VVN-peli 11:00</li> <li>Joystiq 15:00</li></ul>', '1'],
         ['Kultainen Hirvi', 'https://goo.gl/maps/pE1mp13hDt22', 60.448055, 22.288839, 'Hyvää pubiruokaa, kaljaa', '2'],
         ['Delhi Darbar', 'https://goo.gl/maps/Az6CsFmsQdL2', 60.451895, 22.283035, 'Intialaista', '2'],
         ['Assarin Ullakko', 'https://goo.gl/maps/vVBpgbqa4oN2', 60.454302, 22.287526, 'Opiskelijaravintola, avoinna la 11-16', '2'],
