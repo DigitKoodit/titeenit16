@@ -3,7 +3,7 @@ SponsorComponent = React.createClass({
 		return(
 			<div className="innerDiv">
 				<h1>Titeeneissä mukana ystävämme</h1>
-				<p>...Sponsseja...</p>
+				<p>...Tepi pls anna grafiikkaa...</p>
 			</div>
 		);
 	}
