@@ -40,7 +40,7 @@ ScheduleComponent = React.createClass({
         	<tr>
         		<td>Joystiq</td>
         		<td>15:00</td>
-        		<td>@ Boost</td>
+        		<td>@ Kupittaan puisto</td>
         	</tr>
         	<tr>
         		<td>Curling</td>
@@ -60,7 +60,7 @@ ScheduleComponent = React.createClass({
         	<tr>
         		<th>Sunnuntai 20.3.</th>
         		<td>Poistuminen majoituksesta</td>
-        		<td>12:00</td>
+        		<td>10:00</td>
         		<td>Turku kiittää!</td>
         	</tr>
             </tbody>
