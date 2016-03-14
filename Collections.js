@@ -1,0 +1,1 @@
+Tapahtumat = new Meteor.Collection('tapahtumat');
