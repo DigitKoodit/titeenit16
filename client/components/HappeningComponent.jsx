@@ -1,11 +1,11 @@
 HappeningComponent = React.createClass({
-  // mixins: [ReactMeteorData],
+  mixins: [ReactMeteorData],
   // getMeteorData() {
   //   return {
   //     tapahtumat: Tapahtumat.find({}).fetch()
   //   }
   // },
-  getInitialState(){
+  getMeteorData(){
     return{
       now: Session.get('happeningNow'),
       next: Session.get('happeningNext')
@@ -24,7 +24,7 @@ HappeningComponent = React.createClass({
     return Session.get('happeningNext').klo+" "+Session.get('happeningNext').nimi+" @ "+Session.get('happeningNext').paikka;
   },
   render(){
-    console.log(this.state.now);
+    console.log(Session.get('happeningNow'));
     return(
       <div className="innerDiv">
         <h2>

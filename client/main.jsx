@@ -1,5 +1,5 @@
 Meteor.startup(function(){
-    // setInterval(function () {
+    setInterval(function () {
     Meteor.call("getServerTime", function (error, result) {
         Session.set("time", result);
     });
@@ -9,7 +9,7 @@ Meteor.startup(function(){
     Meteor.call("getHappeningNext", function (error, result) {
         Session.set("happeningNext", result);
     });
-        // }, 1000);
+        }, 1000);
   // setTimeout(function(){
   // // ReactDOM.render(
   // //   <Container/>,
