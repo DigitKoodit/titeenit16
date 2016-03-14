@@ -30,8 +30,6 @@ Meteor.methods({
 
 if(Meteor.isServer){
   Meteor.startup(function(){
-	Tapahtumat = {};
-	Tapahtumat = new Meteor.Collection('tapahtumat');
     if(Tapahtumat.find().fetch().length === 0){
       console.log("Initializing the events into empty database");
       // let tapahtumat = [""]
