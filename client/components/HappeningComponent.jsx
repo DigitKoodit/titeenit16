@@ -1,10 +1,5 @@
 HappeningComponent = React.createClass({
   mixins: [ReactMeteorData],
-  // getMeteorData() {
-  //   return {
-  //     tapahtumat: Tapahtumat.find({}).fetch()
-  //   }
-  // },
   getMeteorData(){
     return{
       now: Session.get('happeningNow'),
@@ -13,13 +8,13 @@ HappeningComponent = React.createClass({
   },
   checkCurrentForLoading(){
     if(!Session.get('happeningNow')){
-      return "Ladataan tapahtumia.";
+      return "Ladataan tapahtumia...";
     }
     return Session.get('happeningNow').nimi +" @ "+ Session.get('happeningNow').paikka;
   },
   checkNextForLoading(){
     if(!Session.get('happeningNext')){
-      return "Ladataan tapahtumia.";
+      return "Ladataan tapahtumia...";
     }
     return Session.get('happeningNext').klo+" "+Session.get('happeningNext').nimi+" @ "+Session.get('happeningNext').paikka;
   },
