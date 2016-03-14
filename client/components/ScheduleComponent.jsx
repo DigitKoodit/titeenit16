@@ -6,23 +6,33 @@ ScheduleComponent = React.createClass({
         <table className="ScheduleTable">
             <tbody>
         	<tr>
-        		<th rowSpan="3">Perjantai 18.3.</th>
+        		<th rowSpan="5">Perjantai 18.3.</th>
         		<td>Majoitus aukeaa</td>
-        		<td>17:30</td>
+        		<td>18:00</td>
         		<td>@ Kupittaan koulu (Syreenikuja 1)</td>
         	</tr>
         	<tr>
-        		<td>Sodanjulistus</td>
+        		<td>Gaala</td>
         		<td>18:00</td>
         		<td>@ Showroom (Linnankatu 18)</td>
         	</tr>
+            <tr>
+                <td>TIVIAn puheenvuoro</td>
+                <td>19:30</td>
+                <td>@ Showroomin yläkerta</td>
+            </tr>
+            <tr>
+                <td>Sodanjulistus</td>
+                <td>20:00</td>
+                <td>@ Showroomin yläkerta</td>
+            </tr>
         	<tr>
         		<td>Ensimmäisen lajin julkistus</td>
-        		<td>20:00</td>
+        		<td>21:00</td>
         		<td>@ Showoomin yläkerta</td>
         	</tr>
         	<tr>
-        		<th rowSpan="8">Lauantai 19.3.</th>
+        		<th rowSpan="10">Lauantai 19.3.</th>
         		<td>Aamupala</td>
         		<td>10:00</td>
         		<td>@ Kupittaan puisto</td>
@@ -34,19 +44,29 @@ ScheduleComponent = React.createClass({
         	</tr>
         	<tr>
         		<td>Sokkoralli</td>
-        		<td>13:00</td>
+        		<td>12:00</td>
         		<td>@ Kupittaan liikennepuisto</td>
         	</tr>
+            <tr>
+                <td>Majoitus auki</td>
+                <td>13-15</td>
+                <td>@ Kupittaan koulu</td>
+            </tr>
         	<tr>
         		<td>Joystiq</td>
-        		<td>15:00</td>
+        		<td>15:30</td>
         		<td>@ Kupittaan puisto</td>
         	</tr>
         	<tr>
-        		<td>Curling</td>
+        		<td>5-way beer pong</td>
         		<td>17:00</td>
         		<td>@ Pesäpallokenttä</td>
         	</tr>
+            <tr>
+                <td>Majoitus auki</td>
+                <td>18-19:30</td>
+                <td>@ Kupittaan koulu</td>
+            </tr>
         	<tr>
         		<td>Tivoli aukeaa</td>
         		<td>18:00</td>
