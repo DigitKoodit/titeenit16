@@ -1,4 +1,10 @@
 HappeningComponent = React.createClass({
+  // mixins: [ReactMeteorData],
+  // getMeteorData() {
+  //   return {
+  //     tapahtumat: Tapahtumat.find({}).fetch()
+  //   }
+  // },
   getInitialState(){
     return{
       now: Session.get('happeningNow'),
