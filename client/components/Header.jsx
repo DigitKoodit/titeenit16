@@ -4,13 +4,13 @@ Header = React.createClass({
       <div className="header">
         <ul className="headerNav">
           <li>
-            <h2>Titeenit 2016</h2>
+            <h2><a href="/">Titeenit 2016</a></h2>
           </li>
           <li>
             Menossa mukana:
-            <a href="https://vaadin.com/" target="_blank"> Vaadin</a>,
-            <a href="http://www.nortal.fi/" target="_blank"> Nortal</a>,
-            <a href="https://www.tek.fi/" target="_blank"> TEK</a>
+            <a href="https://vaadin.com/" target="_blank" className="sponsor"> Vaadin</a>,
+            <a href="http://www.nortal.fi/" target="_blank" className="sponsor"> Nortal</a>,
+            <a href="https://www.tek.fi/" target="_blank" className="sponsor"> TEK</a>
           </li>
         </ul>
       </div>
