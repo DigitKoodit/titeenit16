@@ -38,10 +38,10 @@ if(Meteor.isServer){
         	{nimi: 'Titeenikuumotukset', pvm: 'Nyt', klo: 'klo 04:00', paikka: 'Tietoteekkarikaupungit', epoch: 1457661600000}
         );
         Tapahtumat.insert(
-          	{nimi: 'Majoitus aukeaa', pvm: 'Perjantai', klo: 'klo 18:00', paikka: 'Kupittaan koulu', epoch: 1458316800000}
+          	{nimi: 'Majoitus aukeaa', pvm: 'Perjantai', klo: 'klo 17:30', paikka: 'Kupittaan koulu', epoch: 1458315000000}
         );
         Tapahtumat.insert(
-          	{nimi: 'Gaala', pvm: 'Perjantai', klo: 'klo 18:00', paikka: 'Showroom', epoch: 1458316810000}
+          	{nimi: 'Gaala', pvm: 'Perjantai', klo: 'klo 18:00', paikka: 'Showroom', epoch: 1458316800000}
         );
         Tapahtumat.insert(
         	{nimi: 'TIVIAn puheenvuoro', pvm: 'Perjantai', klo: 'klo 19:30', paikka: 'Showroomin yläkerta', epoch: 1458322200000}

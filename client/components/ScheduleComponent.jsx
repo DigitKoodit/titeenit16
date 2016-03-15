@@ -8,7 +8,7 @@ ScheduleComponent = React.createClass({
         	<tr>
         		<th rowSpan="5">Perjantai 18.3.</th>
         		<td>Majoitus aukeaa</td>
-        		<td>18:00</td>
+        		<td>17:30</td>
         		<td>@ Kupittaan koulu (Syreenikuja 1)</td>
         	</tr>
         	<tr>
