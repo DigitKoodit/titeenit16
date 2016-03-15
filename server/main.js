@@ -74,7 +74,7 @@ if(Meteor.isServer){
         	{nimi: 'Majoitus auki', pvm: 'Lauantai', klo: 'klo 18-19:30', paikka: 'Kupittaan koulu', epoch: 1458403200000}
         );
         Tapahtumat.insert(
-          	{nimi: 'Tivoli auki', pvm: 'Lauantai', klo: 'klo 18:00', paikka: 'Tivoli', epoch: 1458403210000}
+          	{nimi: 'Jatkopaikka auki', pvm: 'Lauantai', klo: 'klo 18:00', paikka: 'Tivoli', epoch: 1458403210000}
         );
         Tapahtumat.insert(
           	{nimi: 'Kadonneen tutkinnon metsästys', pvm: 'Lauantai', klo: 'klo 20:00', paikka: 'Tivoli', epoch: 1458410400000}
