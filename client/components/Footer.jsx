@@ -7,7 +7,7 @@ Footer = React.createClass({
 					<li><a href="/"><img src="/images/titeenit.png"></img>Titeenit</a></li>
 					<li><a href="/aikataulu">Sotasuunnitelma</a></li>
   					<li><a href="/kartta">Kartta</a></li>
-  					<li><a href="/sponsorit">Sponsorit</a></li>
+  					<li><a href="/sponsorit">Yhteistyökumppanit</a></li>
   				</ul>
 				</div>
 			</div>
