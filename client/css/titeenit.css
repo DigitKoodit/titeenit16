@@ -130,6 +130,10 @@ box-shadow: 4px -4px 0px -1px rgba(148,138,138,1);
  -moz-transition-duration: 0.3s;
 }
 
+.sponsor{
+  margin: 55px;
+}
+
 table, th, td {
     border: 1px #c0392b;
     border-collapse: collapse;
