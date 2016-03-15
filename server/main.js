@@ -68,7 +68,7 @@ if(Meteor.isServer){
           	{nimi: 'Joystiq', pvm: 'Lauantai', klo: 'klo 15:30', paikka: 'Kupittaan puisto', epoch: 1458394200000}
         );
         Tapahtumat.insert(
-          	{nimi: '5-way beer pong', pvm: 'Lauantai', klo: 'klo 17:00', paikka: 'Pesäpallokenttä', epoch: 1458399600000}
+          	{nimi: '5-way BP', pvm: 'Lauantai', klo: 'klo 17:00', paikka: 'Pesäpallokenttä', epoch: 1458399600000}
         );
         Tapahtumat.insert(
         	{nimi: 'Majoitus auki', pvm: 'Lauantai', klo: 'klo 18-19:30', paikka: 'Kupittaan koulu', epoch: 1458403200000}

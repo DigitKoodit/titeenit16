@@ -59,7 +59,7 @@ ScheduleComponent = React.createClass({
         	</tr>
         	<tr>
         		<td>17:00</td>
-                <td>5-way beer pong</td>
+                <td>5-way BP</td>
         		<td>@ Pesäpallokenttä</td>
         	</tr>
             <tr>
