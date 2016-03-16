@@ -2,7 +2,7 @@ SponsorComponent = React.createClass({
 	render(){
 		return(
 			<div className="innerDiv">
-				<h1>Titeeneissä mukana ystävämme</h1>
+				<h1>TiTeeneissä mukana ystävämme</h1>
 				<div className="sponsor">
 					<a href="https://vaadin.com/" target="_blank"><img src="/images/sponsorit/Vaadin.png"></img></a>
 				</div>
