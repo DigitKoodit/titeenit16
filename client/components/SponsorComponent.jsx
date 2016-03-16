@@ -13,6 +13,12 @@ SponsorComponent = React.createClass({
 					<a href="https://www.sofokus.com/" target="_blank"><img src="/images/sponsorit/Sofokus.png"></img></a>
 				</div>
 				<div className="sponsor">
+					<a href="https://www.accenture.com/" target="_blank"><img src="/images/sponsorit/Accenture.png"></img></a>
+				</div>
+				<div className="sponsor">
+					<a href="http://www.tivia.fi/" target="_blank"><img src="/images/sponsorit/Tivia.png"></img></a>
+				</div>
+				<div className="sponsor">
 					<a href="https://www.tek.fi/" target="_blank"><img src="/images/sponsorit/TEK.png"></img></a>
 				</div>
 			</div>
