@@ -4,7 +4,7 @@ Header = React.createClass({
       <div className="header">
         <ul className="headerNav">
           <li>
-            <h2><a href="/">Titeenit 2016</a></h2>
+            <h2><a href="/">TiTeenit 2016</a></h2>
           </li>
           <li>
             Menossa mukana:
