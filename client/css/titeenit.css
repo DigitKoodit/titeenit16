@@ -21,7 +21,7 @@ body{
   margin-top: 15%;
   color: #c0392b;
   text-align: center;
-  margin-bottom: 10%;
+  margin-bottom: 15%;
 }
 
 
@@ -42,7 +42,7 @@ body{
   width: 100%;
   max-width: 900px;
   min-width: 600px;
-  height: 70%;
+  height: 75%;
   -webkit-box-shadow: 4px -4px 0px -1px rgba(148,138,138,1);
 -moz-box-shadow: 4px -4px 0px -1px rgba(148,138,138,1);
 box-shadow: 4px -4px 0px -1px rgba(148,138,138,1);

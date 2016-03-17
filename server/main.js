@@ -35,7 +35,7 @@ if(Meteor.isServer){
       // let tapahtumat = [""]
       // guilds.map(function(guild){
         Tapahtumat.insert(
-        	{nimi: 'Titeenikuumotukset', pvm: 'Nyt', klo: 'klo 04:00', paikka: 'Tietoteekkarikaupungit', epoch: 1457661600000}
+        	{nimi: 'TiTeenikuumotukset', pvm: 'Nyt', klo: 'klo 04:00', paikka: 'Tietoteekkarikaupungit', epoch: 1457661600000}
         );
         Tapahtumat.insert(
           	{nimi: 'Majoitus aukeaa', pvm: 'Perjantai', klo: 'klo 17:30', paikka: 'Kupittaan koulu', epoch: 1458315000000}
@@ -86,10 +86,10 @@ if(Meteor.isServer){
           	{nimi: 'Poistuminen majoituksesta', pvm: 'Sunnuntai', klo: 'klo 10:00', paikka: 'Kupittaan koulu', epoch: 1458460800000}
         );
         Tapahtumat.insert(
-          	{nimi: 'Titeenit ohi', pvm: '', klo: '', paikka: 'Turku', epoch: 1458460810000}
+          	{nimi: 'TiTeenit ohi', pvm: '', klo: '', paikka: 'Turku', epoch: 1458460810000}
         );
         Tapahtumat.insert(
-          	{nimi: 'Titeenit', pvm: '2017', klo: '2017', paikka: 'Oulu', epoch: 1489996800000}
+          	{nimi: 'TiTeenit', pvm: '2017', klo: '2017', paikka: 'Oulu', epoch: 1489996800000}
         );
       // });
 
