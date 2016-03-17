@@ -22,7 +22,7 @@ SponsorComponent = React.createClass({
 
 SponsorText = React.createClass({
 	render(){
-		switch(Math.floor((Math.random() * 8) +1)) {
+		switch(Math.floor((Math.random() * 7) +1)) {
 			case 1:
 				return(
 					<h1>Webbisuunnittelijoille päänvaivaa aiheuttivat</h1>
@@ -55,14 +55,13 @@ SponsorText = React.createClass({
 				break;
 			case 7:
 				return(
-					<h1>Ultra siistejä firmoja</h1>
+					<h1>Ystävämme</h1>
 				);
 				break;
 			case 8:
 				return(
-					<h1>Ystävämme</h1>
+					<h1>TiTeenitoimikunta myi sielunsa näille firmoille</h1>
 				);
-				break;
 		}
 	}
 })
